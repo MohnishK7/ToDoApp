@@ -25,11 +25,28 @@ Users can create, view, update, and delete tasks via a clean and responsive UI.
 
 ---
 
-## 📸 Screenshots
-
-> *(Optional: Add screenshots here to show the UI)*
-
----
-
 ## 🗂️ Project Structure
+todoapp/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/example/todoapp/
+│   │   │       ├── controller/         # Handles HTTP requests and routes
+│   │   │       │   └── TaskController.java
+│   │   │       ├── entity/             # Contains the Task entity/model class
+│   │   │       │   └── Task.java
+│   │   │       ├── repository/         # Spring Data JPA repository interface
+│   │   │       │   └── TaskRepository.java
+│   │   │       └── TodoAppApplication.java  # Main Spring Boot application class
+│   │   └── resources/
+│   │       ├── static/                 # Static assets (CSS, JS, images)
+│   │       ├── templates/              # Thymeleaf templates (HTML pages)
+│   │       │   └── index.html
+│   │       └── application.properties  # Spring Boot configuration file
+│   └── test/
+│       └── java/                       # Unit and integration tests
+│           └── com/example/todoapp/
+│               └── TodoAppApplicationTests.java
+├── pom.xml                             # Maven build configuration file
+└── README.md                           # Project documentation
 
